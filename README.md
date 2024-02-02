@@ -1,55 +1,27 @@
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
-
 # Flash-Chat
 
-## Our Goal
+![FlashChat](Documentation/FlashChat.gif)
 
-One of the most fundamental component of modern iOS apps is the Table View. Table Views are used everywhere from the Mail app to the Messages app. It’s a crucial part of every iOS developer’s tool belt. In this tutorial we’ll be getting to grips with Table Views, creating custom cells, and making our own cloud-based backend database. It’s going to be epic, so buckle up.
+## Goal
 
-## What you will create
+FlashChat is a versatile messaging application developed using Swift, Firebase, and CocoaPods. It offers users a seamless platform for real-time communication, featuring user authentication, registration, and messaging functionalities. The app follows the Model-View-Controller (MVC) architectural pattern and utilizes a navigation controller for efficient navigation between pages.
 
-Flash Chat is an internet based messaging app similar to WhatsApp, the popular messaging app that was bought by Facebook for $22 billion. We will be using a service called Firebase Firestore as a backend database to store and retrieve our messages from the cloud. 
+## Firebase Integration for Authentication 
+FlashChat leverages Firebase Authentication to provide users with secure login and registration functionalities. Users can create an account, log in securely, and access the app's features using Firebase Authentication.
 
-## What you will learn
+## Real-Time Messaging with Firebase 
+The app utilizes Firebase Realtime Database or Firebase Cloud Firestore to enable real-time messaging between users. Users can send and receive messages instantly, facilitating seamless communication.
 
-* How to integrate third party libraries in your app using Cocoapods and Swift Package Manager.
-* How to store data in the cloud using Firebase Firestore.
-* How to query and sort the Firebase database.
-* How to use Firebase for user authentication, registration and login.
-* How to work with UITableViews and how to set their data sources and delegates.
-* How to create custom views using .xib files to modify native design components.
-* How to embed View Controllers in a Navigation Controller and understand the navigation stack.
-* How to create a constants file and use static properties to store Strings and other constants.
-* Learn about Swift loops and create animations using loops.
-* Learn about the App Lifecycle and how to use viewWillAppear or viewWillDisappear.
-* How to create direct Segues for navigation.
+## Custom Views with .xib Files 
+Custom views are created using .xib files to modify native design components and customize the app's user interface. This allows for a unique and polished design, providing users with an engaging and visually appealing experience.
 
+## User-Friendly Interface with Table View 
+FlashChat presents user chats in a user-friendly interface using a table view. Each chat message is displayed as a table view cell, allowing users to easily view and interact with their messages.
 
-# Constants
-```
-struct K {
-    static let cellIdentifier = "ReusableCell"
-    static let cellNibName = "MessageCell"
-    static let registerSegue = "RegisterToChat"
-    static let loginSegue = "LoginToChat"
-    
-    struct BrandColors {
-        static let purple = "BrandPurple"
-        static let lightPurple = "BrandLightPurple"
-        static let blue = "BrandBlue"
-        static let lighBlue = "BrandLightBlue"
-    }
-    
-    struct FStore {
-        static let collectionName = "messages"
-        static let senderField = "sender"
-        static let bodyField = "body"
-        static let dateField = "date"
-    }
-}
+## Navigation Controller for Page Navigation 
+The app incorporates a navigation controller to manage the navigation flow between different pages. Users can navigate between authentication pages, chat rooms, and other sections of the app effortlessly.
 
-```
+## Animated Chat Title Display with CocoaPods
+FlashChat utilizes CocoaPods to integrate a chat title display animation. This animation enhances the visual appeal of the app's user interface, providing users with an engaging and immersive messaging experience.
 
->This is a companion project to The App Brewery's Complete App Developement Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
-
-![End Banner](Documentation/readme-end-banner.png)
+Flash Chat is an internet based messaging app similar to WhatsApp, the popular messaging app that was bought by Facebook for $22 billion. 
